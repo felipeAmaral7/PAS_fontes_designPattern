@@ -5,7 +5,6 @@ public class UploadServiceSemObserver {
     public void upload(String fileName) {
         System.out.println("Documento " + fileName + " enviado com sucesso!");
 
-        // PROBLEMA: acoplamento forte — cada ação precisa ser chamada manualmente
         enviarEmail(fileName);
         registrarLog(fileName);
     }
